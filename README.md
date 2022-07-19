@@ -137,3 +137,6 @@ else                         // for Minimizer player
      if beta<=alpha break          
    return minEva  
 ```
+
+![293303012_1387177095105397_4748890868051727585_n](https://user-images.githubusercontent.com/59027621/179647783-4cf65bcc-fc92-4e38-8ddb-9a495857faa3.jpg)
+
