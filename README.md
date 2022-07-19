@@ -143,3 +143,17 @@ else                         // for Minimizer player
 
 # BFS / DFS
 
+### last path comparison
+bfs
+![image](https://user-images.githubusercontent.com/59027621/179658629-ac4509a9-2ec5-4770-8329-acf72fdb1288.png)
+
+dfs
+![image](https://user-images.githubusercontent.com/59027621/179658994-cd28052e-4ccd-4649-bacc-29588a0c7a03.png)
+
+### expansion comparison
+
+bfs
+![image](https://user-images.githubusercontent.com/59027621/179659108-3c3a03f7-aef7-492a-bbb1-37e0f43fb5a7.png)
+
+dfs
+![image](https://user-images.githubusercontent.com/59027621/179659157-6375eb12-7655-4528-852f-68c16968cd5f.png)
