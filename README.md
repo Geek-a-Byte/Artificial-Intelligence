@@ -102,3 +102,38 @@ The two-parameter can be defined as:
 - Beta: The best (lowest-value) choice we have found so far at any point along the path of Minimizer. The initial value of beta is +∞.
 
 - The Alpha-beta pruning to a standard minimax algorithm returns the same move as the standard algorithm does, but it removes all the nodes which are not really affecting the final decision but making algorithm slow. Hence by pruning these nodes, it makes the algorithm fast.
+
+![image](https://user-images.githubusercontent.com/59027621/179639526-ba8fc0c6-7e05-43d6-a4b4-2ad0479d8ee0.png)
+
+### key points
+``
+The Max player will only update the value of alpha.
+The Min player will only update the value of beta.
+While backtracking the tree, the node values will be passed to upper nodes instead of values of alpha and beta.
+We will only pass the alpha, beta values to the child nodes.
+``
+## Pseudocode
+
+```
+function minimax(node, depth, alpha, beta, maximizingPlayer) is  
+if depth==0 or node is a terminal node then  
+   return static evaluation of node  
+  
+if MaximizingPlayer then      // for Maximizer Player  
+   maxEva= -infinity            
+   for each child of node do  
+     eva= minimax(child, depth-1, alpha, beta, False)  
+     maxEva= max(maxEva, eva)   
+     alpha= max(alpha, maxEva)      
+     if beta<=alpha break  
+   return maxEva  
+    
+else                         // for Minimizer player  
+   minEva= +infinity   
+   for each child of node do  
+     eva= minimax(child, depth-1, alpha, beta, true)  
+     minEva= min(minEva, eva)   
+     beta= min(beta, minEva)  
+     if beta<=alpha break          
+   return minEva  
+```
