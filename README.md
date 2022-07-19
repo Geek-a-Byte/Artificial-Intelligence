@@ -1,4 +1,8 @@
-https://www.youtube.com/watch?v=pDxbtrVDwSU
+## Additional Resources
+
+- https://www.youtube.com/watch?v=pDxbtrVDwSU
+- https://www.youtube.com/watch?v=aWEKe7lQxNw
+
 # AI-Sessional
 
 ## Mini-Max Algorithm in Artificial Intelligence
