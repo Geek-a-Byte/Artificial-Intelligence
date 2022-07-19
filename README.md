@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=pDxbtrVDwSU
 # AI-Sessional
 
 ## Mini-Max Algorithm in Artificial Intelligence
