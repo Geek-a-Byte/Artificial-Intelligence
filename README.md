@@ -31,3 +31,60 @@ else                         // for Minimizer player
  minEva= min(minEva, eva)         //gives minimum of the values  
  return minEva  
 ```
+
+## Example
+
+In this example, there are two players one is called Maximizer and other is called Minimizer.
+Maximizer will try to get the Maximum possible score, and Minimizer will try to get the minimum possible score.
+This algorithm applies DFS, so in this game-tree, we have to go all the way through the leaves to reach the terminal nodes.
+At the terminal node, the terminal values are given so we will compare those value and backtrack the tree until the initial state occurs. 
+Following are the main steps involved in solving the two-player game tree:
+
+Step-1: In the first step, the algorithm generates the entire game-tree and apply the utility function to get the utility values for the terminal states. In the below tree diagram, let's take A is the initial state of the tree. Suppose maximizer takes first turn which has worst-case initial value =- infinity, and minimizer will take next turn which has worst-case initial value = +infinity.
+
+![image](https://user-images.githubusercontent.com/59027621/179638056-74148ab2-5537-4dd3-a12e-5f2c7be17dbb.png)
+
+Step 2: Now, first we find the utilities value for the Maximizer, its initial value is -∞, so we will compare each value in terminal state with initial value of Maximizer and determines the higher nodes values. It will find the maximum among the all.
+
+```
+For node D         max(-1, -∞) => max(-1, 4) = 4
+For Node E         max(2, -∞)  => max(2, 6) = 6
+For Node F         max(-3, -∞) => max(-3, -5) = -3
+For node G         max(0, -∞)  => max(0, 7) = 7
+```
+
+![image](https://user-images.githubusercontent.com/59027621/179638268-dd93ce09-f5b1-4efa-ad09-72066f9beb29.png)
+
+Step 3: In the next step, it's a turn for minimizer, so it will compare all nodes value with +∞, and will find the 3rd layer node values.
+
+```
+For node B = min(+∞,4) = min(4,6) = 4
+For node C = min(+∞,-3) = min (-3, 7) = -3
+```
+
+![image](https://user-images.githubusercontent.com/59027621/179638511-b6872b4f-e3d4-4362-8c9e-551ed015077b.png)
+
+Step 4: Now it's a turn for Maximizer, and it will again choose the maximum of all nodes value and find the maximum value for the root node. In this game tree, there are only 4 layers, hence we reach immediately to the root node, but in real games, there will be more than 4 layers.
+
+```
+For node A max(4, -3)= 4
+```
+
+![image](https://user-images.githubusercontent.com/59027621/179638605-f64c3513-2f51-4d8a-a864-d692681a2d0b.png)
+
+That was the complete workflow of the minimax two player game.
+
+## Properties of Mini-Max algorithm:
+```
+1. Complete- Min-Max algorithm is Complete. It will definitely find a solution (if exist), in the finite search tree.
+2. Optimal- Min-Max algorithm is optimal if both opponents are playing optimally.
+3. Time complexity- As it performs DFS for the game-tree, so the time complexity of Min-Max algorithm is O(bm), where b is branching factor of the game-tree, and m is the maximum depth of the tree.
+4. Space Complexity- Space complexity of Mini-max algorithm is also similar to DFS which is O(bm).
+```
+
+## Limitation of the minimax Algorithm:
+```
+The main drawback of the minimax algorithm is that it gets really slow for complex games such as Chess, go, etc. 
+This type of games has a huge branching factor, and the player has lots of choices to decide. 
+This limitation of the minimax algorithm can be improved from alpha-beta pruning which we have discussed in the next topic.
+```
