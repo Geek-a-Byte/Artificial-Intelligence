@@ -24,7 +24,13 @@ and real-time traffic updates on that route. The complex Informed search algorit
 The complex Informed search algorithms are powering google
 map’s search functionality
 ```
-
+## Uninformed Search (Blind Search)
+```
+a. Ex.: BFS, DFS, Binary Search, Linear Search.
+b. Do not know where they should search for the goal state.
+c. Takes a lot of time to search as it does not know where to head and where
+the best chances of finding the element are.
+```
 ## A* Search algo
 ```py
 # g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
