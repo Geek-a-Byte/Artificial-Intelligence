@@ -29,7 +29,9 @@ Now, the following steps need to be implemented -
     d) for each successor
         i) if successor is the goal, stop search
         
-        ii) else, compute both g and h for successor
+        ii) If the successor is already on the closed list or if it is blocked, then ignore it.
+        
+        iii) else, compute both g and h for successor
           successor.g = q.g + distance between 
                               successor and q
           successor.h = distance from goal to 
@@ -40,11 +42,11 @@ Now, the following steps need to be implemented -
           
           successor.f = successor.g + successor.h
 
-        iii) if a node with the same position as 
+        iV) if a node with the same position as 
             successor is in the OPEN list which has a 
            lower f than successor, skip this successor
 
-        iV) if a node with the same position as 
+        V) if a node with the same position as 
             successor  is in the CLOSED list which has
             a lower f than successor, skip this successor
             
