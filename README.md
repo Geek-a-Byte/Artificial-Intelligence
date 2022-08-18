@@ -23,6 +23,10 @@ and real-time traffic updates on that route. The complex Informed search algorit
 
 The complex Informed search algorithms are powering google
 map’s search functionality
+
+a. Opposite to Uninformed Search. Ex.: A* search, known as Best-first search.
+b. Aware of where the best chances of finding the element are and heads that way.
+c. Use heuristics value to optimize the search and provide the solution as quickly as possible.
 ```
 ## Uninformed Search (Blind Search)
 ```
