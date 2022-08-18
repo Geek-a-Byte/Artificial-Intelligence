@@ -9,7 +9,14 @@
 1. uninformed search - bfs, dfs, iterative dependent dfs, uniform cost search
 2. informed search - greedy search, a* search, graph search
 ```
-## informed search
+## Uninformed Search (Blind Search)
+```
+a. Ex.: BFS, DFS, Binary Search, Linear Search.
+b. Do not know where they should search for the goal state.
+c. Takes a lot of time to search as it does not know where to head and where
+the best chances of finding the element are.
+```
+## Informed search
 ```
 Informed Search is a kind of searching strategy that help in
 - navigating or traversing large databases with certain information about the goal in the search.
@@ -28,13 +35,16 @@ a. Opposite to Uninformed Search. Ex.: A* search, known as Best-first search.
 b. Aware of where the best chances of finding the element are and heads that way.
 c. Use heuristics value to optimize the search and provide the solution as quickly as possible.
 ```
-## Uninformed Search (Blind Search)
+
+## Best First Search
 ```
-a. Ex.: BFS, DFS, Binary Search, Linear Search.
-b. Do not know where they should search for the goal state.
-c. Takes a lot of time to search as it does not know where to head and where
-the best chances of finding the element are.
+Greedy best-first search algorithm always selects the path which appears best at that moment. 
+It is the combination of depth-first search and breadth-first search algorithms. 
+It uses the heuristic function and search. 
+Best-first search allows us to take the advantages of both algorithms. 
+With the help of best-first search, at each step, we can choose the most promising node.
 ```
+
 ## A* Search algo
 ```py
 # g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
