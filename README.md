@@ -9,6 +9,14 @@
 # g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
 # h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path, because all sorts of things can be in the way (walls, water, etc.). There can be many ways to calculate this ‘h’ which are discussed in the later sections.
 
+1. Get the square on the open list which has the lowest score. Let’s call
+this square S.
+2. Remove S from the open list and add S to the closed list.
+3. For each square T in S’s walkable adjacent tiles:
+a) If T is in the closed list: Ignore it.
+b) If T is not in the open list: Add it and compute its score.
+c) If T is already in the open list: Check if the F score is lower. If it is, update its score and update its parent as well.
+
 def aStarSearch():
   take the initial node 
   do a goaltest
