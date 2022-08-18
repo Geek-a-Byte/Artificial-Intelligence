@@ -5,56 +5,46 @@
 
 # AI-Sessional
 ## A* Search algo
-```
-g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
-h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path, because all sorts of things can be in the way (walls, water, etc.). There can be many ways to calculate this ‘h’ which are discussed in the later sections.
+```py
+# g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
+# h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path, because all sorts of things can be in the way (walls, water, etc.). There can be many ways to calculate this ‘h’ which are discussed in the later sections.
 
-1. Initial condition - we create two lists - Open List and Closed List.
-
-Now, the following steps need to be implemented -
-1.  Initialize the open list
-2.  Initialize the closed list
-    put the starting node on the open 
-    list (you can leave its f at zero)
-
-3.  while the open list is not empty
-    a) find the node with the least f on 
-       the open list, call it "q"
-
-    b) pop q off the open list
-  
-    c) generate q's 8 successors and set their 
-       parents to q
-   
-    d) for each successor
-        i) if successor is the goal, stop search
+def aStarSearch():
+  take the initial node 
+  do a goaltest
+     if the initial node is the goal then return the initial node 
+     else take a frontier queue and append the node # here frontier is the open list  
+     
+  initialize a set named explored # which is our closed list 
+  while loop starts
+     if frontier is empty 
+        return failure/None
         
-        ii) If the successor is already on the closed list or if it is blocked, then ignore it.
-        
-        iii) else, compute both g and h for successor
-          successor.g = q.g + distance between 
-                              successor and q
-          successor.h = distance from goal to 
-          successor (This can be done using many 
-          ways, we will discuss three heuristics- 
-          Manhattan, Diagonal and Euclidean 
-          Heuristics)
-          
-          successor.f = successor.g + successor.h
-
-        iV) if a node with the same position as 
-            successor is in the OPEN list which has a 
-           lower f than successor, skip this successor
-
-        V) if a node with the same position as 
-            successor  is in the CLOSED list which has
-            a lower f than successor, skip this successor
+     sort the frontier queue based on f value = h+g of any node in the queue, so that we can find out the minimum node based on that f value
+     
+     take the front node from frontier
+     
+     do a goaltest again, if it is goal then return this node
+     
+     add the node to explored set
+     
+     generate all the possible child nodes of that node 
+     calculate the g of each child node
+     assign the front node as parent of each child node
+     
+     assign all the childs to a child list
+     
+     for loop starts across child list
+         if child in the childlist is not in frontier and not in explored
+            insert the child into frontier
             
-        V)  otherwise, add  the node to the open list
-     end (for loop)
-  
-    e) push q on the closed list
-    end (while loop)
+         elif child in frontier
+            find out the index of the child in the frontier
+            find out the child from that index through frontier[index]
+            let infrontiernode = frontier[index]
+            if h(child)+g(child)<h(infrontiernode)+g(infrontiernode)
+               frontier[index]=child
+     for loop ends   
 ```
 ## Mini-Max Algorithm in Artificial Intelligence
 - Mini-max algorithm is a recursive or backtracking algorithm which is used in decision-making and game theory. It provides an optimal move for the player assuming that opponent is also playing optimally.
