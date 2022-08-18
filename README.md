@@ -43,6 +43,9 @@ def aStarSearch():
      assign all the childs to a child list
      
      for loop starts across child list
+         # if a child is in frontier, not in explored then it will be explored later, 
+         # if a child is explored but not in frontier, we will ignore it, 
+         # if a child is explored and is in frontier -> not a valid possible case
          if child is in explored 
             continue
          if child in the childlist is not in frontier and not in explored
