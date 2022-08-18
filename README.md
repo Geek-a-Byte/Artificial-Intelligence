@@ -44,7 +44,21 @@ It uses the heuristic function and search.
 Best-first search allows us to take the advantages of both algorithms. 
 With the help of best-first search, at each step, we can choose the most promising node.
 ```
+## A* Search
+```
+- A* search is the commonly known form of best-first search.
+- It uses heuristic function 𝒉(𝒏), and cost 𝒈(𝒏) to reach the node 𝒏 from the start state.
+- It has combined features of UCS (Uniformed Cost Search) and greedy best-first search, by which it solves the problem efficiently.
+- This search algorithm expands less search tree and provides optimal result faster.
+- As A* search algorithm uses heuristic approach and the cost to reach the node, it combines (sums up) both costs. 
+- This sum is called as a Fitness number, 𝒇(𝒏) = 𝒈(𝒏) + 𝒉(𝒏)
 
+𝑓(𝑛) = 𝑔(𝑛) + ℎ(𝑛), where
+𝑔(𝑛) the cost to reach a node (travel cost).
+ℎ(𝑛) estimated cost from the node to the goal.
+𝑓(𝑛) estimated total cost of path through 𝒏 to goal. 
+It is implemented using priority queue by increasing 𝑓(𝑛).
+```
 ## A* Search algo
 ```py
 # g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
