@@ -4,6 +4,27 @@
 - https://www.youtube.com/watch?v=aWEKe7lQxNw
 
 # AI-Sessional
+## Searching Algorithms
+```
+1. uninformed search - bfs, dfs, iterative dependent dfs, uniform cost search
+2. informed search - greedy search, a* search, graph search
+```
+## informed search
+```
+Informed Search is a kind of searching strategy that help in
+- navigating or traversing large databases with certain information about the goal in the search.
+- mostly used in large databases, trees, graphs, etc. where uninformed search techniques can not accurately determine precise 
+results with optimum solution.
+
+For example,
+- while searching on google maps for travelling from one place to another, information is given to the search algorithm 
+like a place which is planned to visit from the current location to accurately navigate the distance, the time taken, 
+and real-time traffic updates on that route. The complex Informed search algorithms are powering google map’s search functionality.
+
+The complex Informed search algorithms are powering google
+map’s search functionality
+```
+
 ## A* Search algo
 ```py
 # g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
