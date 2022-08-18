@@ -22,7 +22,7 @@ def aStarSearch():
         
      sort the frontier queue based on f value = h+g of any node in the queue, so that we can find out the minimum node based on that f value
      
-     take the front node from frontier
+     take the front node from frontier, pop that frontnode from the frontier
      
      do a goaltest again, if it is goal then return this node
      
