@@ -35,6 +35,8 @@ def aStarSearch():
      assign all the childs to a child list
      
      for loop starts across child list
+         if child is in explored 
+            continue
          if child in the childlist is not in frontier and not in explored
             insert the child into frontier
             
