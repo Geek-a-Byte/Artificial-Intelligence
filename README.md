@@ -47,7 +47,8 @@ Now, the following steps need to be implemented -
         iV) if a node with the same position as 
             successor  is in the CLOSED list which has
             a lower f than successor, skip this successor
-            otherwise, add  the node to the open list
+            
+        V)  otherwise, add  the node to the open list
      end (for loop)
   
     e) push q on the closed list
