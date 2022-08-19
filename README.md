@@ -59,6 +59,9 @@ But time is still an important factor. At depth d=14 even with infinite memory, 
 In general, exponential complexity search problems cannot be solved by uninformed search 
 for any but the smallest instances.
 ```
+## DFS and DLDFS not optimal
+![image](https://user-images.githubusercontent.com/59027621/185559431-a50a1781-231e-4258-8a0e-f5ed7aedb5cc.png)
+
 ## Depth Limited DFS
 ```
 Like depth-first search, except:
