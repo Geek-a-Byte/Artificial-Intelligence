@@ -56,6 +56,25 @@ But time is still an important factor. At depth d=14 even with infinite memory, 
 In general, exponential complexity search problems cannot be solved by uninformed search 
 for any but the smallest instances.
 ```
+## Depth Limited DFS
+```
+Like depth-first search, except:
+- Depth limit in the algorithm, or 
+- Operators that incorporate a depth limit
+
+L = depth limit
+1. Complete if L ≥ d (d is the depth of the shallowest goal)
+2. Not optimal 
+3. Θ(𝑏^𝐿) time
+4. Θ(𝑏L) space
+```
+## Iterative Deepening DFS
+```
+- get DFS’s space advantage with BFS’s optimality / shallow-solution advantages
+Run a DFS with depth limit 1. If no solution…
+Run a DFS with depth limit 2. If no solution…
+Run a DFS with depth limit 3. ….
+```
 ## Informed search
 ```
 Informed Search is a kind of searching strategy that help in
@@ -316,6 +335,8 @@ else                         // for Minimizer player
 ![293303012_1387177095105397_4748890868051727585_n](https://user-images.githubusercontent.com/59027621/179647783-4cf65bcc-fc92-4e38-8ddb-9a495857faa3.jpg)
 
 # BFS / DFS
+### comparison between bfs and dfs
+![image](https://user-images.githubusercontent.com/59027621/185542222-8075cae0-439d-4dd2-81e0-549cbc6c914b.png)
 
 ### last path comparison
 bfs
