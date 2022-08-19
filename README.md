@@ -106,6 +106,10 @@ It uses the heuristic function and search.
 Best-first search allows us to take the advantages of both algorithms. 
 With the help of best-first search, at each step, we can choose the most promising node.
 ```
+
+## Algorithm for Uniform Cost Search
+![image](https://user-images.githubusercontent.com/59027621/185544675-7ed8d7a4-3cd9-467c-8ca6-e42816a8824a.png)
+
 ## A* Search
 ```
 - A* search is the commonly known form of best-first search.
