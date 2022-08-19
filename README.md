@@ -77,6 +77,8 @@ path finding and graph traversal. Main objective is to reach the target node fro
 ```
 
 ![image](https://user-images.githubusercontent.com/59027621/185523090-402f2630-866a-4fc5-887d-e73a3433fbf3.png)
+## A* pseudocode from slide
+![image](https://user-images.githubusercontent.com/59027621/185525145-ff4e493b-96ae-443d-9c8e-690bc9c454f4.png)
 
 ## A* Search algo
 ```py
