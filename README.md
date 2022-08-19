@@ -2,6 +2,7 @@
 
 - https://www.youtube.com/watch?v=pDxbtrVDwSU
 - https://www.youtube.com/watch?v=aWEKe7lQxNw
+- https://stackoverflow.com/questions/9250630/completeness-of-depth-first-search
 
 # AI-Sessional
 ```
