@@ -76,6 +76,8 @@ path finding and graph traversal. Main objective is to reach the target node fro
 (-) The main drawback of A* is memory requirement as it keeps all generated nodes in the memory, so it is not practical for various large-scale problems.
 ```
 
+![image](https://user-images.githubusercontent.com/59027621/185523090-402f2630-866a-4fc5-887d-e73a3433fbf3.png)
+
 ## A* Search algo
 ```py
 # g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
