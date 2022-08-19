@@ -207,6 +207,9 @@ def aStarSearch():
                frontier[index]=child
      for loop ends   
 ```
+## Comparison btween uninformed searches
+![image](https://user-images.githubusercontent.com/59027621/185560152-f2f23c63-11f1-47c5-b7ac-f89694bb2b26.png)
+
 ## Mini-Max Algorithm in Artificial Intelligence
 - Mini-max algorithm is a recursive or backtracking algorithm which is used in decision-making and game theory. It provides an optimal move for the player assuming that opponent is also playing optimally.
 - Mini-Max algorithm uses recursion to search through the game-tree.
