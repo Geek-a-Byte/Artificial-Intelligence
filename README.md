@@ -75,6 +75,9 @@ Run a DFS with depth limit 1. If no solution…
 Run a DFS with depth limit 2. If no solution…
 Run a DFS with depth limit 3. ….
 ```
+## algorithm for iterative deeping dfs
+![image](https://user-images.githubusercontent.com/59027621/185543590-e24caf39-07db-4dcc-ac19-6114eeac575b.png)
+
 ## Informed search
 ```
 Informed Search is a kind of searching strategy that help in
