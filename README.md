@@ -211,6 +211,24 @@ def aStarSearch():
 ## Comparison btween uninformed searches
 ![image](https://user-images.githubusercontent.com/59027621/185560152-f2f23c63-11f1-47c5-b7ac-f89694bb2b26.png)
 
+## pseduocode for dijkstra
+```
+1:	function Dijkstra(Graph, source):
+2:	    for each vertex v in Graph:	// Initialization
+3:	        dist[v] := infinity	// initial distance from source to vertex v is set to infinite
+4:	        previous[v] := undefined	// Previous node in optimal path from source
+5:	    dist[source] := 0	// Distance from source to source
+6:	    Q := the set of all nodes in Graph	// all nodes in the graph are unoptimized - thus are in Q
+7:	    while Q is not empty:	// main loop
+8:	        u := node in Q with smallest dist[ ]
+9:	        remove u from Q
+10:	        for each neighbor v of u:	// where v has not yet been removed from Q.
+11:	            alt := dist[u] + dist_between(u, v)
+12:	            if alt < dist[v]	// Relax (u,v)
+13:	                   dist[v] := alt
+14:	                   previous[v] := u
+15:	    return previous[ ]
+```
 ## Mini-Max Algorithm in Artificial Intelligence
 - Mini-max algorithm is a recursive or backtracking algorithm which is used in decision-making and game theory. It provides an optimal move for the player assuming that opponent is also playing optimally.
 - Mini-Max algorithm uses recursion to search through the game-tree.
