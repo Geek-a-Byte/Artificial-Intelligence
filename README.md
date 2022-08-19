@@ -6,11 +6,12 @@
 # AI-Sessional
 ## Searching Algorithms
 ```
-1. uninformed search - bfs, dfs, iterative dependent dfs, uniform cost search
+1. uninformed search - bfs, dfs, iterative dependent dfs, uniformed cost search, dldfs, bidirectional search
 2. informed search - greedy search, a* search, graph search
 ```
 ## Uninformed Search (Blind Search)
 ```
+Algorithms that are given no information about the problem other than its definition.
 a. Ex.: BFS, DFS, Binary Search, Linear Search.
 b. Do not know where they should search for the goal state.
 c. Takes a lot of time to search as it does not know where to head and where
