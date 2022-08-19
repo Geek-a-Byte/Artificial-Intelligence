@@ -4,6 +4,14 @@
 - https://www.youtube.com/watch?v=aWEKe7lQxNw
 
 # AI-Sessional
+```
+Evaluate an algorithm’s performance in four ways:
+1. Completeness: Is the algorithm guaranteed to find a solution when there is one?
+2. Optimality: Does the strategy find the optimal solution?
+3. Time complexity: How long does it take to find a solution?
+4. Space complexity: How much memory is needed to perform the 
+search?
+```
 ## Searching Algorithms
 ```
 1. uninformed search - bfs, dfs, iterative dependent dfs, uniformed cost search, dldfs, bidirectional search
@@ -16,6 +24,35 @@ a. Ex.: BFS, DFS, Binary Search, Linear Search.
 b. Do not know where they should search for the goal state.
 c. Takes a lot of time to search as it does not know where to head and where
 the best chances of finding the element are.
+```
+## Breadth First Search
+```
+Breadth-first search always finds a solution with a minimal number of actions, 
+because when it is generating nodes at depth d it has already generated all the nodes at depth d-1 
+so if one of them were a solution, it would have been found. 
+
+That means it is cost-optimal for problems where all actions have the same cost, 
+but not for problems that don’t have that property. It is complete in either case. 
+
+In terms of time and space, imagine searching a uniform tree where every state has successors. 
+The root of the search tree generates nodes, each of which generates more nodes, for a total of at the second level. 
+Each of these generates more nodes, yielding nodes at the third level, and so on. 
+
+Now suppose that the solution is at depth d. 
+Then the total number of nodes generated is 1 + b + b^2 + b^3 + ⋯ + b^d = O (b^d). 
+All the nodes remain in memory, so both time and space complexity are O (b^d). 
+
+Exponential bounds like that are scary. 
+As a typical real-world example, consider a problem with branching factor b=10, processing speed 1 million nodes/second, 
+and memory requirements of 1 Kbyte/node. A search to depth d=10 would take less than 3 hours, but
+would require 10 terabytes of memory.
+
+The memory requirements are a bigger problem for breadth-first search than the execution time. 
+
+But time is still an important factor. At depth d=14 even with infinite memory, the search would take 3.5 years. 
+
+In general, exponential complexity search problems cannot be solved by uninformed search 
+for any but the smallest instances.
 ```
 ## Informed search
 ```
