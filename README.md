@@ -6,6 +6,7 @@
 - https://ai-master.gitbooks.io/heuristic-search/content/what-is-greedy-best-first-search.html
 - https://stackoverflow.com/questions/19204682/time-complexity-of-uniform-cost-search
 - https://www.youtube.com/watch?v=dRMvK76xQJI&ab_channel=JohnLevine
+- https://www.youtube.com/watch?v=6TsL96NAZCo&t=32s&ab_channel=JohnLevine
 
 # AI-Sessional
 ```
