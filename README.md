@@ -55,10 +55,27 @@ With the help of best-first search, at each step, we can choose the most promisi
 
 𝑓(𝑛) = 𝑔(𝑛) + ℎ(𝑛), where
 𝑔(𝑛) the cost to reach a node (travel cost).
-ℎ(𝑛) estimated cost from the node to the goal.
+ℎ(𝑛) estimated cost from the current node to the goal.
 𝑓(𝑛) estimated total cost of path through 𝒏 to goal. 
 It is implemented using priority queue by increasing 𝑓(𝑛).
 ```
+## Use of A* Search
+```
+path finding and graph traversal. Main objective is to reach the target node from the starting node as quickly as possible
+```
+## Pros of A* Search
+```
+(+) A* search algorithm is one of the best algorithms than other search algorithms.
+(+) A* search algorithm is optimal and complete.
+(+) This algorithm can solve very complex problems.
+```
+## Cons of A* Search
+```
+(-) It does not always produce the shortest path as it mostly based on heuristics and approximation.
+(-) A* search algorithm has some complexity issues.
+(-) The main drawback of A* is memory requirement as it keeps all generated nodes in the memory, so it is not practical for various large-scale problems.
+```
+
 ## A* Search algo
 ```py
 # g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
