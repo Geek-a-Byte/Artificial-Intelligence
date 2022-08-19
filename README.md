@@ -9,6 +9,7 @@
 - https://www.youtube.com/watch?v=6TsL96NAZCo&t=32s&ab_channel=JohnLevine
 - https://www.youtube.com/watch?v=XB4MIexjvY0&ab_channel=AbdulBari
 - https://www.youtube.com/watch?v=CJmlP03ik5g&ab_channel=JacobSchrum
+- https://stackoverflow.com/questions/20516027/consistent-and-admissible-heuristics
 
 # AI-Sessional
 ```
@@ -230,6 +231,10 @@ def aStarSearch():
 14:	                   previous[v] := u
 15:	    return previous[ ]
 ```
+
+## Consistent heuristics
+![image](https://user-images.githubusercontent.com/59027621/185586103-8bb82229-781f-4bfc-973b-4882d68305c8.png)
+
 ## Mini-Max Algorithm in Artificial Intelligence
 - Mini-max algorithm is a recursive or backtracking algorithm which is used in decision-making and game theory. It provides an optimal move for the player assuming that opponent is also playing optimally.
 - Mini-Max algorithm uses recursion to search through the game-tree.
