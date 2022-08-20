@@ -236,7 +236,7 @@ def aStarSearch():
 ![image](https://user-images.githubusercontent.com/59027621/185586103-8bb82229-781f-4bfc-973b-4882d68305c8.png)
 
 ## Mini-Max Algorithm in Artificial Intelligence
-- Mini-max algorithm is a recursive or backtracking algorithm which is used in decision-making and game theory. It provides an optimal move for the player assuming that opponent is also playing optimally.
+- Mini-max algorithm is a recursive or backtracking algorithm which is used in decision-making and game theory. It provides an optimal move (best possible move which will increase his chances of winning) for the player assuming that opponent is also playing optimally.
 - Mini-Max algorithm uses recursion to search through the game-tree.
 - Min-Max algorithm is mostly used for game playing in AI. Such as Chess, Checkers, tic-tac-toe, go, and various tow-players game. This Algorithm computes the minimax decision for the current state.
 - In this algorithm two players play the game, one is called MAX and other is called MIN.
@@ -275,11 +275,11 @@ This algorithm applies DFS, so in this game-tree, we have to go all the way thro
 At the terminal node, the terminal values are given so we will compare those value and backtrack the tree until the initial state occurs. 
 Following are the main steps involved in solving the two-player game tree:
 
-Step-1: In the first step, the algorithm generates the entire game-tree and apply the utility function to get the utility values for the terminal states. In the below tree diagram, let's take A is the initial state of the tree. Suppose maximizer takes first turn which has worst-case initial value =- infinity, and minimizer will take next turn which has worst-case initial value = +infinity.
+```Step-1```: In the first step, the algorithm generates the entire game-tree and apply the utility function to get the utility values for the terminal states. In the below tree diagram, let's take A is the initial state of the tree. Suppose maximizer takes first turn which has worst-case initial value =- infinity, and minimizer will take next turn which has worst-case initial value = +infinity.
 
 ![image](https://user-images.githubusercontent.com/59027621/179638056-74148ab2-5537-4dd3-a12e-5f2c7be17dbb.png)
 
-Step 2: Now, first we find the utilities value for the Maximizer, its initial value is -∞, so we will compare each value in terminal state with initial value of Maximizer and determines the higher nodes values. It will find the maximum among the all.
+```Step 2```: Now, first we find the utilities value for the Maximizer, its initial value is -∞, so we will compare each value in terminal state with initial value of Maximizer and determines the higher nodes values. It will find the maximum among the all.
 
 ```
 For node D         max(-1, -∞) => max(-1, 4) = 4
@@ -290,7 +290,7 @@ For node G         max(0, -∞)  => max(0, 7) = 7
 
 ![image](https://user-images.githubusercontent.com/59027621/179638268-dd93ce09-f5b1-4efa-ad09-72066f9beb29.png)
 
-Step 3: In the next step, it's a turn for minimizer, so it will compare all nodes value with +∞, and will find the 3rd layer node values.
+```Step 3```: In the next step, it's a turn for minimizer, so it will compare all nodes value with +∞, and will find the 3rd layer node values.
 
 ```
 For node B = min(+∞,4) = min(4,6) = 4
@@ -299,7 +299,7 @@ For node C = min(+∞,-3) = min (-3, 7) = -3
 
 ![image](https://user-images.githubusercontent.com/59027621/179638511-b6872b4f-e3d4-4362-8c9e-551ed015077b.png)
 
-Step 4: Now it's a turn for Maximizer, and it will again choose the maximum of all nodes value and find the maximum value for the root node. In this game tree, there are only 4 layers, hence we reach immediately to the root node, but in real games, there will be more than 4 layers.
+```Step 4```: Now it's a turn for Maximizer, and it will again choose the maximum of all nodes value and find the maximum value for the root node. In this game tree, there are only 4 layers, hence we reach immediately to the root node, but in real games, there will be more than 4 layers.
 
 ```
 For node A max(4, -3)= 4
