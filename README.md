@@ -350,6 +350,9 @@ The Min player will only update the value of beta.
 While backtracking the tree, the node values will be passed to upper nodes instead of values of alpha and beta.
 We will only pass the alpha, beta values to the child nodes.
 ``
+
+![image](https://user-images.githubusercontent.com/59027621/185737357-81271548-9eff-4de0-a5ea-cd372339d642.png)
+
 ## Pseudocode
 
 ```
