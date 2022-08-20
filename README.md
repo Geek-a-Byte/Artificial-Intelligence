@@ -10,6 +10,7 @@
 - https://www.youtube.com/watch?v=XB4MIexjvY0&ab_channel=AbdulBari
 - https://www.youtube.com/watch?v=CJmlP03ik5g&ab_channel=JacobSchrum
 - https://stackoverflow.com/questions/20516027/consistent-and-admissible-heuristics
+- https://algorithmsinsight.wordpress.com/graph-theory-2/ida-star-algorithm-in-general/
 
 # AI-Sessional
 ```
