@@ -351,14 +351,14 @@ We will only pass the alpha, beta values to the child nodes.
 ## Pseudocode
 
 ```
-function minimax(node, depth, alpha, beta, maximizingPlayer) is  
+function alphabetapruning(node, depth, alpha, beta, maximizingPlayer) is  
 if depth==0 or node is a terminal node then  
    return static evaluation of node  
   
 if MaximizingPlayer then      // for Maximizer Player  
    maxEva= -infinity            
    for each child of node do  
-     eva= minimax(child, depth-1, alpha, beta, False)  
+     eva= alphabetapruning(child, depth-1, alpha, beta, False)  
      maxEva= max(maxEva, eva)   
      alpha= max(alpha, maxEva)      
      if beta<=alpha break  
@@ -367,7 +367,7 @@ if MaximizingPlayer then      // for Maximizer Player
 else                         // for Minimizer player  
    minEva= +infinity   
    for each child of node do  
-     eva= minimax(child, depth-1, alpha, beta, true)  
+     eva= alphabetapruning(child, depth-1, alpha, beta, true)  
      minEva= min(minEva, eva)   
      beta= min(beta, minEva)  
      if beta<=alpha break          
