@@ -266,6 +266,7 @@ else                         // for Minimizer player
     minEva= min(minEva, eva)         //gives minimum of the values  
  return minEva  
 ```
+![image](https://user-images.githubusercontent.com/59027621/185727139-c6c5de6f-43e6-40e4-8a50-c5c664baeba6.png)
 
 ## Example
 
