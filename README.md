@@ -374,6 +374,7 @@ else                         // for Minimizer player
    return minEva  
 ```
 ![298980834_796254554705936_2501631571678490940_n](https://user-images.githubusercontent.com/59027621/185728478-896064bc-4765-482b-a964-a200c3a7dba6.jpg)
+![299621523_1339373456596648_1800021443781895247_n](https://user-images.githubusercontent.com/59027621/185729992-479e63b8-5e22-403a-9eec-24e8d6a1575a.jpg)
 
 
 
