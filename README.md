@@ -373,8 +373,9 @@ else                         // for Minimizer player
      if beta<=alpha break          
    return minEva  
 ```
+![298980834_796254554705936_2501631571678490940_n](https://user-images.githubusercontent.com/59027621/185728478-896064bc-4765-482b-a964-a200c3a7dba6.jpg)
 
-![293303012_1387177095105397_4748890868051727585_n](https://user-images.githubusercontent.com/59027621/179647783-4cf65bcc-fc92-4e38-8ddb-9a495857faa3.jpg)
+
 
 # BFS / DFS
 ### comparison between bfs and dfs
