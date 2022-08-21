@@ -12,6 +12,8 @@
 - https://stackoverflow.com/questions/20516027/consistent-and-admissible-heuristics
 - https://algorithmsinsight.wordpress.com/graph-theory-2/ida-star-algorithm-in-general/
 - https://www.algorithms-and-technologies.com/iterative_deepening_a_star
+- https://medium.com/analytics-vidhya/implementing-logic-gates-using-neural-networks-part-1-f8c0d3c48332
+- https://towardsdatascience.com/implementing-logic-gates-using-neural-networks-part-2-b284cc159fce
 
 # AI-Sessional
 ```
